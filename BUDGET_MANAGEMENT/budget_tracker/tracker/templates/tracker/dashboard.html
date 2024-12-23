@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+    <h1>Budget Dashboard</h1>
+    <p>Total Income: {{ total_income }}</p>
+    <p>Total Expenses: {{ total_expenses }}</p>
+    <p>Balance: {{ balance }}</p>
+    <h2>Actions</h2>
+    <ul>
+        <li><a href="{% url 'add_income' %}">Add Income</a></li>
+        <li><a href="{% url 'add_expense' %}">Add Expense</a></li>
+        <li><a href="{% url 'manage_categories' %}">Manage Categories</a></li>
+    </ul>
+</body>
+</html>
